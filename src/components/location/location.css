@@ -1,0 +1,40 @@
+.location__main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #062226;
+    border-radius: 8px;
+    width: 80%;
+    padding: 1rem 0;
+    color: white;
+}
+
+.location__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location__info h2 {
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.location__info span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 550px) {
+    .location__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location__name {
+        text-align: center;
+        font-size: 20px;
+    }
+  }

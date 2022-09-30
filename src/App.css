@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #06292E;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resident__main__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.form__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, button {
+  padding: 10px 18px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+form input {
+  padding: 10px 30px;
+  width: 40%;
+}
+
+form button {
+  padding: 10px 18px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient__background {
+    /* ff 3.6+ */
+  background:-moz-linear-gradient(88deg, rgba(132, 86, 236, 1) 0%, rgba(232, 123, 248, 1) 100%); 
+  
+    /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(88deg, rgba(132, 86, 236, 1) 0%, rgba(232, 123, 248, 1) 100%);
+  
+    /* opera 11.10+ */
+  background:-o-linear-gradient(88deg, rgba(132, 86, 236, 1) 0%, rgba(232, 123, 248, 1) 100%);
+  
+    /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E87BF8', endColorstr='#8456EC', GradientType=0 );
+  
+    /* ie 10+ */
+  background:-ms-linear-gradient(88deg, rgba(132, 86, 236, 1) 0%, rgba(232, 123, 248, 1) 100%);
+  
+    /* global 94%+ browsers support */
+  background:linear-gradient(88deg, rgba(132, 86, 236, 1) 0%, rgba(232, 123, 248, 1) 100%);
+}
+
+@media screen and (max-width: 550px) {
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form input {
+    padding: 10px 30px;
+    width: 90%;
+  }
+}
