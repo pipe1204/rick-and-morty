@@ -48,7 +48,7 @@ function App() {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <div className="form__content">
-          <input name="universe" type="number" placeholder="Search for a Universe (numbers from 1 to 126)"/>
+          <input name="universe" type="number" placeholder="Search Universe (1 to 126)"/>
           <button className="gradient__background" type="submit">Search</button>
         </div>
         {
