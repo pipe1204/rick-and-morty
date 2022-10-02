@@ -1,0 +1,91 @@
+.main__character__div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+  margin-top: 20px;
+  width: 80%;
+}
+  
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 20px;
+    background-color: #072226;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .modal__content h4 {
+    margin: 5px 0;
+  }
+
+  .character__name__div:hover {
+    width: 100%;
+    background-color: #B568F1;
+    cursor: pointer;
+    border-radius: 4px;
+    padding-left: 5px;
+  }
+
+  .hideModal {
+    display: none
+  }
+  
+  form input, button {
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  form input {
+    padding: 10px 30px;
+    width: 40%;
+  }
+  
+  .search {
+    padding: 10px 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .search:focus {
+    outline: none;
+  }
+  
+  .search:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+  }
+
+  .resident__main__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
